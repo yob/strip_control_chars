@@ -11,4 +11,5 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "yob-projects"
   s.test_files        = [ "test/strip_control_chars_test.rb", "test/test_helper.rb" ]
   s.files             = [ "lib/strip_control_chars.rb", "lib/strip_control_chars/ar_extend.rb","lib/strip_control_chars/railtie.rb","Rakefile", "MIT-LICENSE", "README.rdoc" ]
+  s.add_dependency("activerecord", ">= 3.0.0.rc")
 end
