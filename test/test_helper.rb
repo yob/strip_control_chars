@@ -5,10 +5,11 @@ require 'active_record'
 PLUGIN_ROOT = File.expand_path(File.join(File.dirname(__FILE__), ".."))
 
 $LOAD_PATH.unshift "#{PLUGIN_ROOT}/lib"
-require "#{PLUGIN_ROOT}/init"
+require 'strip_control_chars'
 
 class ActiveRecord::Base
   alias_method :save, :valid?
+  extend StripControlChars::ArExtend
   def self.columns()
     @columns ||= []
   end
