@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.description       = "a small ActiveRecord plugin that removes ASCII control chars from attributes"
   s.author            = "James Healy"
   s.email             = "james@yob.id.au"
-  s.homepage          = "http://github.com/yob/strip_control_chars/tree/master"
+  s.homepage          = "http://github.com/yob/strip_control_chars"
   s.has_rdoc          = true
   s.rdoc_options      << "--title" << "Strip Control Chars" << "--line-numbers"
   s.rubyforge_project = "yob-projects"
